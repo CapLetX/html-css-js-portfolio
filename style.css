@@ -11,11 +11,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-body {
-    background: white;
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -30,59 +25,58 @@ body {
     background-color: #eaeaea;
     box-shadow: 3px, 3px, 5px, rgba(0, 0, 0, 0);
     height: 50px;
+}
+
+body {
+    background: white;
+}
+
+a, 
+.btn {
+    transition: all 300ms ease;
+}
+
+nav, 
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color:(rgb 181, 181, 181);
     
 }
 
 .logo {
-    font-size: 30px;
-    color: #222;
-    text-decoration: none;
-    font-weight: 600;
+    font-size: 2rem;
+    position: relative;
+    left: 30px;
 }
 
-.navbar a {
-    font-size: 18px;
-    color: #222;
-    text-decoration: none;
-    font-weight: 500;
-    margin: 0 20px;
-    transition: .3s;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: #1743e3;
-}
-
-.social-media {
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
-    height: 40px;
-    
-}
-
-.social-media a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: 2px solid transparent;
-    text-decoration: none;
-    transform: rotate(45deg);
-    transition: .5s;
-}
-
-.social-media a:hover {
-    border-color: blue;
-}
-
-.social-media a i {
-    font-size: 24px;
-    color: blue;
-    transform: rotate(-45deg);
+.logo:hover {
+    cursor: default;
 }
 
 .flex-container {
@@ -101,6 +95,83 @@ body {
     position: relative;
     right: 60px;
 }
+
+/* HAMBURGER MENU */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+    
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
 
 /* input box -------------------------- */
 
@@ -178,6 +249,8 @@ body {
     left: 90px;
     text-align: left;
 }
+
+
 
 
 
@@ -286,6 +359,7 @@ button {
     width: 100%;
     height: auto;
     object-fit: cover;
+    
 }
 
 .card-content {
@@ -293,7 +367,7 @@ button {
 }
 
 .card-content h1 {
-    font-size: 2px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -331,6 +405,7 @@ input[type="checkbox"] {
 }
 label {
     position: relative;
+    bottom: 10px;
     padding: 1em;
     background-color: #3498db;
     color: #ffffff;
