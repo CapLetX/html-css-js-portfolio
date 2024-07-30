@@ -4,34 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="mediaqueries.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>LESSON PLANNER</title>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Lesson Planner</a>
-
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#about-us">About us</a>
-            <a href="#Tutorial">Tutorial</a>
+        <nav id="desktop-nav">
+            <div class="logo">LESSON PLANNER</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="#Tutorial">Tutorial</a></li>
+                    
+                </ul>
+            </div>
         </nav>
-
-        <div class="social-media">
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100064268216362"><i class='bx bxl-facebook-circle' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-        </div>
+        <nav id="hamburger-nav">
+            <div class="logo">LESSON PLANNER</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about-us" onclick="toggleMenu()">About us</a></li>
+                    <li><a href="#Tutorial" onclick="toggleMenu()">Tutorial</a></li>
+                    
+            </div>
+            </div>
+        </nav>
     </header>
     <div class="flex-container">
          <form style="flex-grow: 2" action="box">
                 <div class="inputBox">
                     <input type="text" required="required">
                     <span>Topic of Lesson:</span>
-                </div>
-                <div class="example">
-                    hello
                 </div>
                 <div class="inputBox">
                     <input type="text" required="required">
@@ -50,7 +61,10 @@
         <div class = "title">
             <section class="description">
                 <h1>AI LESSON PLANNER</h1>
-                <p>Generate your own lesson plan in seconds!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Totam consequatur ullam, qui iste in voluptates earum mollitia,
+                saepe ratione rerum quos facere nostrum aliquam perspiciatis
+                neque alias corporis deleniti labore?</p>
            </section>
         </div>
     </div>
@@ -64,11 +78,9 @@
             <h1>About Us</h1>
         </div>
         <div class="card">
-            <img src="images/bea.png">
+            <img src="image-png.png">
             <div class="card-content">
-                <h1>Title One</h1>
-                <div class="creator">Beatrice Pedroche
-                </div>
+                <h1>Beatrice Pedroche</h1>
                 <p class="original">Undergrad student studying BS in Computer Science and specializing in Artificial Intelligence at AMA Computer College Pasig. Will someday buy her own Nintendo Switch.</p>
                 <span class="dots">...</span>
                 <p class="extra">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -81,11 +93,8 @@
         <div class="card">
             <img src="image2-png.png">
             <div class="card-content">
-                <h1>Title two</h1>
-                <div class="creator">Christian Once
-                </div>
-                <p class="original">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Possimus at similique libero odio odit fuga</p>
+                <h1>Christian Once</h1>
+                <p class="original">Undergrad student studying BS in Computer Science and specializing in Artificial Intelligence at AMA Computer College Pasig. Will someday buy her own Nintendo Switch.</p>
                 <span class="dots">...</span>
                 <p class="extra">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Possimus at similique libero odio odit fuga, repudiandae repellat
@@ -116,22 +125,22 @@
         </div>
         <div class="box">
             <h2>STEP 1:</h2>
-            <h3>Fill in all text boxes.</h3>
+            <h3>Lorem ipsum dolor sit amet consectetur,</h3>
             <img src="topiclesson.png">
         </div>
         <div class="box">
             <h2>STEP 2:</h2>
-            <h3>Press submit and wait for a few seconds.</h3>
+            <h3>Lorem ipsum dolor sit amet consectetur,</h3>
             <img src="gradestudent.png">
         </div>
         <div class="box">
             <h2>STEP 3:</h2>
-            <h3>Voila! Your lesson plan has been generated.</h3>
+            <h3>Lorem ipsum dolor sit amet consectetur,</h3>
             <img src="durationlesson.png">
         </div>
         <div class="box">
             <h2>STEP 4:</h2>
-            <h3>Generate again or  save the lesson plan as a docx file.</h3>
+            <h3>Lorem ipsum dolor sit amet consectetur,</h3>
             <img src="custom.png">
         </div>
      </div>
