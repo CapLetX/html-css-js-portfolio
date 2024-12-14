@@ -1,0 +1,60 @@
+<div class = "title">
+            <section class="description">
+                <h1>AI LESSON PLANNER</h1>
+                <p>Lesson planning. Automated. For Creative Learning School, Inc.</p>  // yung "For Creative Learning School, Inc" lang na dagdag ko dyan so kahit eto lang copy paste mo //
+           </section>
+        </div>
+
+
+
+// Last na card-container lang ang na dagdag ko so kahit ayun na lang copy paste mo para di na mahirapan mag balik ng mga static kasi tanggal ang mga static nyan kasi di gumagnaa sakin //
+
+<div class="card-container">
+        <div class="about-us" id="about-us">
+            <h1>About Us</h1>
+        </div>
+        <div class="warning hover">
+            (Hover your mouse over the card!)
+        </div>
+        <div class="card">
+            <image src="bea.png">
+            <div class="card-content">
+                <h1>Beatrice Pedroche</h1>
+                <p><span>Beatrice Pedroche</span> Undergrad student studying BS in Computer Science and
+                    specializing in Artificial Intelligence at AMA Computer College Pasig. 
+                    She is the backend developer and AI specialist of this website.
+                    The idea of a lesson plan generator was inspired by her father who used
+                    to be a computer college professor. She hopes to become a software engineer focusing on AI.</p>
+                </div>  
+           </div>
+           <div class="card">
+            <image src="xtiann.png">
+            <div class="card-content">
+                <h1>Christian Once</h1>
+                <p><span>Christian Once</span> Undergrad student studying BS in Computer Science with a Major Elective in Database Management. He is the frontend developer and designer for the UI. He aspires to become a database management specialist</p>
+                </div>  
+           </div>
+           <div class="card">
+            <image src="logo.png">
+            <div class="card-content">
+                <h1>About the System</h1>
+                <p><span>The AI Lesson Plan Generator</span> for CLSI
+                is an AI-powered website to automatically create lesson plans in
+                just a click of a button. this system was developed by Beatrice Pedroche
+                and Christian Once as a requirement for AMA Computer College Pasig.</p>
+                </div>  
+           </div>
+           <div class="card">
+            <image src="CLSI logo.jpg">
+            <div class="card-content">
+                <h1>About CLSI</h1>
+                <p><span>Creative Learning School, Inc.</span> CLSI <span>HISTORY</span> 
+                   Was established in 1988 at the University of Life as a preschool. Eventually
+                   , it added the Grade school in 2003 and the High School in 2012 as an alternative
+                   school for parents who prefer low student - teacher ratio over the high density schools.
+                   CLSI focuses on excellece to meet the needs of the times. Our four-storey building
+                   offers an intimate learning environment in a family-like setting. 
+                </p>
+                </div>  
+           </div>
+    </div>
